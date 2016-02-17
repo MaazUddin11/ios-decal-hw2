@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardViewController" customModule="CalKeyboard" customModuleProvider="target">
             <connections>
+                <outlet property="blackButton" destination="cNa-8V-s31" id="1X3-k1-Gmi"/>
+                <outlet property="blueButton" destination="Yxm-Ff-whv" id="uUD-cF-Xvu"/>
+                <outlet property="deleteButton" destination="f9O-HT-ggS" id="AHx-XS-Ul2"/>
+                <outlet property="greenButton" destination="9mL-QI-PeM" id="Qob-Hn-ypd"/>
+                <outlet property="greyButton" destination="MM0-ZX-kx7" id="5Yp-Wt-7By"/>
                 <outlet property="nextKeyboardButton" destination="gRt-12-JcF" id="CWQ-gG-G2m"/>
+                <outlet property="orangeButton" destination="guQ-WL-fk5" id="hlE-KC-ILR"/>
+                <outlet property="pinkButton" destination="2Ue-Q9-gSO" id="yuH-Cw-Ujb"/>
+                <outlet property="purpleButton" destination="eQO-jF-1nZ" id="90a-xe-RtR"/>
+                <outlet property="redButton" destination="ix5-Of-J8W" id="hAF-EX-FzU"/>
+                <outlet property="returnButton" destination="Wqh-aC-e6o" id="ZfL-dL-9I2"/>
+                <outlet property="yellowButton" destination="iMN-dX-qSA" id="ys2-av-FyZ"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -14,22 +26,75 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRt-12-JcF">
-                    <rect key="frame" x="8" y="162" width="30" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="30" id="eu0-xj-Jov"/>
-                        <constraint firstAttribute="height" constant="30" id="rFT-bm-aBM"/>
-                    </constraints>
-                    <state key="normal" title="N"/>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRt-12-JcF">
+                    <rect key="frame" x="8" y="162" width="105" height="30"/>
+                    <state key="normal" title="Next Keyboard"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yxm-Ff-whv">
+                    <rect key="frame" x="238" y="47" width="30" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wqh-aC-e6o">
+                    <rect key="frame" x="135" y="162" width="105" height="30"/>
+                    <state key="normal" title="Return"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9O-HT-ggS">
+                    <rect key="frame" x="256" y="162" width="105" height="30"/>
+                    <state key="normal" title="Delete"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color Keyboard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8o-3L-ocu">
+                    <rect key="frame" x="128" y="8" width="119" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ix5-Of-J8W">
+                    <rect key="frame" x="107" y="47" width="30" height="30"/>
+                    <color key="backgroundColor" red="0.98524305555555558" green="0.072361183074005339" blue="0.092169999634441391" alpha="1" colorSpace="calibratedRGB"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9mL-QI-PeM">
+                    <rect key="frame" x="172" y="47" width="30" height="30"/>
+                    <color key="backgroundColor" red="0.011931485848020442" green="0.86667455808080807" blue="0.12310448742670295" alpha="1" colorSpace="calibratedRGB"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="guQ-WL-fk5">
+                    <rect key="frame" x="107" y="85" width="30" height="30"/>
+                    <color key="backgroundColor" red="0.98524305560000003" green="0.5781920864817135" blue="0.054684651526114028" alpha="1" colorSpace="calibratedRGB"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MM0-ZX-kx7">
+                    <rect key="frame" x="172" y="124" width="30" height="30"/>
+                    <color key="backgroundColor" red="0.86236025117780402" green="0.86667455810000005" blue="0.83015236827676631" alpha="1" colorSpace="calibratedRGB"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNa-8V-s31">
+                    <rect key="frame" x="107" y="124" width="30" height="30"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQO-jF-1nZ">
+                    <rect key="frame" x="238" y="85" width="30" height="30"/>
+                    <color key="backgroundColor" red="0.76616569489999997" green="0.052080865499999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ue-Q9-gSO">
+                    <rect key="frame" x="238" y="124" width="30" height="30"/>
+                    <color key="backgroundColor" red="0.94519412878787878" green="0.095216630707583336" blue="0.81157916193651902" alpha="1" colorSpace="calibratedRGB"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iMN-dX-qSA">
+                    <rect key="frame" x="172" y="85" width="30" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.99920139061749613" blue="0.027517236363694408" alpha="1" colorSpace="calibratedRGB"/>
                 </button>
             </subviews>
             <constraints>
-                <constraint firstItem="gRt-12-JcF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="LUD-YX-JVD"/>
+                <constraint firstItem="u8o-3L-ocu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="Fv0-6Q-P5q"/>
+                <constraint firstAttribute="trailing" secondItem="f9O-HT-ggS" secondAttribute="trailing" constant="14" id="Hvc-W4-SIO"/>
+                <constraint firstAttribute="bottom" secondItem="f9O-HT-ggS" secondAttribute="bottom" constant="8" id="LaK-pa-D23"/>
+                <constraint firstItem="gRt-12-JcF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="Lav-bL-0Aj"/>
+                <constraint firstItem="u8o-3L-ocu" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="OET-EJ-1DW"/>
+                <constraint firstItem="Wqh-aC-e6o" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="R3z-XM-DOj"/>
+                <constraint firstItem="u8o-3L-ocu" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="119:200" id="dOF-ZJ-Mvj"/>
+                <constraint firstAttribute="bottom" secondItem="Wqh-aC-e6o" secondAttribute="bottom" constant="8" id="sLS-zC-SPK"/>
                 <constraint firstAttribute="bottom" secondItem="gRt-12-JcF" secondAttribute="bottom" constant="8" id="tEE-h3-FZa"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="605.5" y="542"/>
+            <point key="canvasLocation" x="574.5" y="282"/>
         </view>
     </objects>
 </document>
